@@ -10,7 +10,7 @@ redirect_from:
 
 Hi there!
 
-I am a PhD student at UT Austin's Department of Physics and Oden Institute for Computatational Engineering and Sciences. Prior to that, I got a B.Sc. in Physics and a minor in Computer Science from Wuhan University in 2018, and then worked as a graduate research assistant at the Hong Kong University of Science and Technology for one and a half years.
+I am a PhD student at UT Austin's Department of Physics and Oden Institute for Computational Engineering and Sciences([CSEM](https://www.oden.utexas.edu/people/directory/Kaifa-Luo/)). Prior to that, I got a B.Sc. in Physics and a minor in Computer Science from Wuhan University in 2018, and then worked as a graduate research assistant at the Hong Kong University of Science and Technology for one and a half years.
 
 Besides continuous passions for natural science, I am now interested in Social Constructionism, Micro-economics and Cognitive Psychology. To understand humankind and natural world motivates my life.
 
