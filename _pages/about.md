@@ -1,14 +1,12 @@
 ---
 permalink: /
-title: "This is Kaifa's homepage."
+title: "Hi there!"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-
-Hi there!
 
 My name is Kaifa (IPA:/ki.fa/), which means *innovate* or *develop* in Chinese.
 
