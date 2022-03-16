@@ -10,13 +10,8 @@ redirect_from:
 
 Hi there!
 
-I am a PhD student at UT Austin's Department of Physics and Oden Institute for Computational Engineering and Sciences([CSEM](https://www.oden.utexas.edu/people/directory/Kaifa-Luo/)). Prior to that, I got a B.Sc. in Physics and a minor in Computer Science from Wuhan University in 2018, and then worked as a graduate research assistant at the Hong Kong University of Science and Technology for one and a half years.
+I am currently a PhD student of Physics and [Oden Institute](https://www.oden.utexas.edu/people/directory/Kaifa-Luo/)) at [UT Austin](https://www.oden.utexas.edu/). Prior to that, I graduated summa cum laude from Wuhan University in 2018, and worked as a graduate research assistant @[HKUST](https://hkust.edu.hk/home) during 2019-20.
 
-Besides continuous passions for natural science, I am now interested in Social Constructionism, Micro-economics and Cognitive Psychology. To understand humankind and natural world motivates my life.
+Besides continuous passions for natural science, I am interested in social constructionism, micro-economics and cognitive psychology. To understand humankind and natural world motivates my life.
 
 ---
-
-PageViews: <!-- hitwebcounter Code START -->
-<a href="https://www.hitwebcounter.com" target="_blank">
-<img src="https://hitwebcounter.com/counter/counter.php?page=7195951&style=0022&nbdigits=4&type=page&initCount=0" title="User Stats" Alt="webcounterwebsite"   border="0" >
-</a>                                    
