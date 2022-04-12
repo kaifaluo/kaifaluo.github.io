@@ -9,6 +9,8 @@ Full list please find on my [Google Scholar](https://scholar.google.com/citation
 $^{\star}$Joint first author.
 
 ---
+[4] Transverse Peierls Transition,<br/>
+**Kaifa Luo**, Xi Dai. [arXiv:2204.04714](https://arxiv.org/abs/2204.04714) (2022).<br/>
 
 [3] Large Fermi-arc and robust Weyl semimetal phase in Ag$_2$S,<br/>
 Zhenwei Wang$^{\star}$, **Kaifa Luo**$^{\star}$, Jianzhou Zhao, Rui Yu. [Phys. Rev. B 100, 205117](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.100.205117) (2019).<br/>
