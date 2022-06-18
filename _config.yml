@@ -11,9 +11,9 @@ title                    : "Real World is Complex"
 title_separator          : "-"
 name                     : &name "Kaifa Luo"
 description              : &description "personal description"
-url                      : https://luokf.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://kaifaluo.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "luokf/luokf.github.io"
+repository               : "kaifaluo/kaifaluo.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "luokf"
+  github           : "kaifaluo"
   google_plus      :
   keybase          :
   instagram        :
@@ -111,7 +111,7 @@ author:
   tumblr           :
   twitter          : # "replacethistwitterhandle"
   vine             :
-  weibo            : # "https://www.zhihu.com/people/luokf/answers"
+  weibo            : # "https://www.zhihu.com/people/kaifaluo/answers"
   xing             :
   youtube          : # "https://www.youtube.com/channel/UCXPkfKq1-WDcFNEq3yVAgaQ"
   wikipedia        :
