@@ -13,7 +13,7 @@ redirect_from:
   * M.S. student in CSEM program
 * Aug 2019 - Dec 2020, The Hong Kong University of Science and Technology, Hong Kong, China
   * Visiting scholar in physics
-* Sep 2014 - May 2019, Wuhan University, Wuhan, China
+* Sep 2014 - June 2018, Wuhan University, Wuhan, China
   * B.S. in physics (summa cum laude)
   * Minor in computer science
 
