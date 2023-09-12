@@ -14,8 +14,6 @@ I am currently a Ph.D. student of Physics and [Computational Science](https://ww
 
 My recent research interests are mainly on the first-principle algorithm and high-performance scientific computing in the context of condensed matter physics.
 
-[Contact Me!](https://forms.gle/ka6opFEKXnsCXpMUA)
-
 <!--
 Besides continuous passions for natural science, I am interested in social constructionism, micro-economics and cognitive psychology. To understand humankind and natural world motivates my life.
 -->
