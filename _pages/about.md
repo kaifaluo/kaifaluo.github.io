@@ -10,7 +10,7 @@ redirect_from:
 
 My name is Kaifa (/ˈkīfa/), which means *innovate* in Chinese.
 
-I am currently a Ph.D. candidate in Physics at [UT Austin](https://www.oden.utexas.edu/), and earned a M.S. in Computational Science, Eigneering and Mathematics from [Oden Institute](https://www.oden.utexas.edu/people/directory/Kaifa-Luo/) in 2024. Prior to that, I graduated summa cum laude from Wuhan University in China, and worked as a graduate research assistant at [HKUST](https://hkust.edu.hk/home).
+I am currently a Ph.D. candidate in Physics at [UT Austin](https://www.oden.utexas.edu/), and earned a M.S. in Computational Science, Engineering and Mathematics from [Oden Institute](https://www.oden.utexas.edu/people/directory/Kaifa-Luo/) in 2024. Prior to that, I graduated summa cum laude from Wuhan University in China, and worked as a graduate research assistant at [HKUST](https://hkust.edu.hk/home).
 
 **Recent Interests**:<br/>
 - First-principles methodologies for many-body physics,<br/>
