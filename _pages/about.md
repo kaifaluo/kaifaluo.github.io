@@ -18,8 +18,7 @@ I am currently a Ph.D. candidate in Physics at [UT Austin](https://www.oden.utex
 3. high-performance computing.<br/>
 
 
-**Selected Publication**: full list on my [Google Scholar profile](https://scholar.google.com/citations?user=IaCMjeQAAAAJ&hl=en).<br/>
-$^{\star}$Joint first author.
+**Selected Publication**: <br/>
 
 [4] Transverse Peierls Transition,<br/>
 **Kaifa Luo**, Xi Dai. [Phys. Rev. X 13, 011027](https://journals.aps.org/prx/abstract/10.1103/PhysRevX.13.011027) (2023).<br/>
