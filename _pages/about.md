@@ -10,20 +10,17 @@ redirect_from:
 
 My name is Kaifa (/ˈkīfa/), which means *innovate* in Chinese.
 
-I am currently a Ph.D. candidate of Physics at [UT Austin](https://www.oden.utexas.edu/), and earned a M.S. in Computational Science, Eigneering and Mathematics from [Oden Institute](https://www.oden.utexas.edu/people/directory/Kaifa-Luo/) in 2024. Prior to that, I graduated summa cum laude from Wuhan University, and worked as a graduate research assistant at [HKUST](https://hkust.edu.hk/home).
+I am currently a Ph.D. candidate in Physics at [UT Austin](https://www.oden.utexas.edu/), and earned a M.S. in Computational Science, Eigneering and Mathematics from [Oden Institute](https://www.oden.utexas.edu/people/directory/Kaifa-Luo/) in 2024. Prior to that, I graduated summa cum laude from Wuhan University in China, and worked as a graduate research assistant at [HKUST](https://hkust.edu.hk/home).
 
-My recent research interests are mainly on:<br/>
+**Recent reserch interest**:<br/>
 1. first-principles methodologies for many-body physics,<br/>
 2. multi-scale modeling of condensed matter,<br/>
 3. high-performance computing.<br/>
 
 
-#### Selected Publication:
-
-Full list please find on my [Google Scholar](https://scholar.google.com/citations?user=IaCMjeQAAAAJ&hl=en) profile.<br/>
+**Selected Publication**: full list on my [Google Scholar profile](https://scholar.google.com/citations?user=IaCMjeQAAAAJ&hl=en).<br/>
 $^{\star}$Joint first author.
 
----
 [4] Transverse Peierls Transition,<br/>
 **Kaifa Luo**, Xi Dai. [Phys. Rev. X 13, 011027](https://journals.aps.org/prx/abstract/10.1103/PhysRevX.13.011027) (2023).<br/>
 
