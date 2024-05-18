@@ -14,8 +14,7 @@ redirect_from:
 * Aug 2019 - Dec 2020, The Hong Kong University of Science and Technology, Hong Kong, China
   * Visiting scholar in physics
 * Sep 2014 - June 2018, Wuhan University, Wuhan, China
-  * B.S. in physics (summa cum laude)
-  * Minor in computer science
+  * B.S. in Physics (summa cum laude), Minor in computer science
 
 ## Professional Experience
 
