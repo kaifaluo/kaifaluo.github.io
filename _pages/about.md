@@ -13,8 +13,9 @@ My name is Kaifa (/ˈkīfa/), which means *innovate* in Chinese.
 I am currently a Ph.D. candidate in Physics at [UT Austin](https://www.oden.utexas.edu/), and earned a M.S. in Computational Science, Engineering and Mathematics from [Oden Institute](https://www.oden.utexas.edu/people/directory/Kaifa-Luo/) in 2024. Prior to that, I graduated summa cum laude from Wuhan University in China, and worked as a graduate research assistant at [HKUST](https://hkust.edu.hk/home).
 
 **Recent Interests**:<br/>
-- First-principles methodologies for many-body physics,<br/>
-- Multi-scale modeling of condensed matter,<br/>
+- Many-body electronic structures,<br/>
+- Topological states and effects,<br/>
+- Multi-scale modeling, machine learning,<br/>
 - High-performance computing.<br/>
 
 **Selected Publications**: <br/>
