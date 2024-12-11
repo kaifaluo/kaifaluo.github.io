@@ -14,10 +14,10 @@ I am currently a Ph.D. candidate in Physics at [UT Austin](https://www.oden.utex
 
 **Recent Interests**:<br/>
 - Many-body electronic structures,<br/>
-- Topological states and effects,<br/>
-- Defects, Polarons, Excitons,<br/>
-- Multi-scale modeling, Machine learning,<br/>
-- High-performance computing.<br/>
+- Symmetry-protected topological states,<br/>
+- Polarons, Excitons, Defects,<br/>
+- Spontaneous symmetry breaking in phase transitions,<br/>
+- Multi-scale modeling, Machine learning, High-performance computing.<br/>
 
 **Selected Publications**: <br/>
 - Transverse Peierls Transition,<br/>
