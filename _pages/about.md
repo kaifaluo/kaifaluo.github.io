@@ -15,8 +15,8 @@ I am currently a Ph.D. candidate in Physics at [UT Austin](https://www.oden.utex
 **Recent Interests**:<br/>
 - Many-body electronic structures,<br/>
 - Symmetry-protected topological states,<br/>
-- Localization phenomena: Polarons, Excitons, Defects, ...<br/>
-- Spontaneous symmetry breaking: structural phase transitions, charge-density waves, ...<br/>
+- Localization: Polarons, Excitons, Defects, ...<br/>
+- Spontaneous symmetry breaking: Structural phase transitions, Charge-density waves, ...<br/>
 - Multi-scale modeling, Machine learning, High-performance computing.<br/>
 
 **Selected Publications**: <br/>
