@@ -13,10 +13,10 @@ My name is Kaifa (/ˈkīfa/), which means *innovate* in Chinese.
 I am currently a Ph.D. candidate in Physics at [UT Austin](https://www.oden.utexas.edu/), and earned a M.S. in Computational Science, Engineering and Mathematics from [Oden Institute](https://www.oden.utexas.edu/people/directory/Kaifa-Luo/) in 2024. Prior to that, I graduated summa cum laude from Wuhan University in China, and worked as a graduate research assistant at [HKUST](https://hkust.edu.hk/home).
 
 **Recent Interests**:<br/>
-- Many-body electronic structures,<br/>
-- Symmetry-protected topological states,<br/>
 - Localization: Polarons, Excitons, Defects, ...<br/>
 - Spontaneous symmetry breaking: Structural phase transitions, Charge-density waves, ...<br/>
+- Symmetry-protected topological states,<br/>
+- Many-body electronic structures,<br/>
 - Multi-scale modeling, Machine learning, High-performance computing.<br/>
 
 **Selected Publications**: <br/>
