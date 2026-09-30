@@ -7,7 +7,7 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
@@ -15,60 +15,118 @@
             font-family: 'Inter', sans-serif;}
         h1, h2, h3 {
             font-family: 'Inter', sans-serif;}
-        .serif-text {
-            font-family: 'Merriweather', serif;}
-        .animate-fade-in {
-            animation: fadeIn 0.8s ease-out forwards;
-            opacity: 0;}
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }}
+        .intro-layout {
+            display: grid;
+            gap: 2.5rem;
+        }
+        .profile-position {
+            color: #334155;
+            font-size: 0.875rem;
+            line-height: 1.6;
+            margin-bottom: 0.75rem;
+        }
+        .bio { font-size: 1rem; line-height: 1.8; }
+        .bio-link, .publication-list h3 a { color: #244b70; }
+        a:focus-visible { outline: 2px solid #244b70; outline-offset: 4px; }
+        .bio-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+        @media (min-width: 768px) {
+            .intro-layout { grid-template-columns: 240px minmax(0, 1fr); gap: 3rem; }
+        }
+        .publication-list {
+            list-style: decimal outside;
+            padding-left: 2rem;
+        }
+        .publication-list li {
+            padding: 0 0 1.25rem 0.5rem;
+            margin-bottom: 1.25rem;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        .publication-list li:last-child {
+            padding-bottom: 0;
+            margin-bottom: 0;
+            border-bottom: 0;
+        }
+        .publication-list li::marker {
+            color: #64748b;
+            font-weight: 500;
+            font-variant-numeric: tabular-nums;
+        }
+        .publication-list h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.5;
+            color: #0f172a;
+        }
+        .publication-list a:hover,
+        .publication-list a:focus-visible {
+            color: #163650;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+        .publication-authors, .publication-venue {
+            margin-top: 0.375rem;
+            font-size: 0.875rem;
+            line-height: 1.65;
+            color: #475569;
+        }
+        .preprint-label {
+            display: inline-block;
+            margin-left: 0;
+            padding: 0.1rem 0.5rem;
+            border-radius: 0.25rem;
+            background: #f1f5f9;
+            color: #475569;
+            font-size: 0.75rem;
+        }
+        .publication-authors strong { color: #334155; font-weight: 600; }
+        .publication-venue { margin-top: 0.25rem; }
+        .publication-venue strong { font-weight: 600; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+<body class="bg-white text-slate-800 antialiased">
+    <div class="max-w-5xl mx-auto px-5 sm:px-8 py-10 md:py-16">
         <!-- Combined Intro Section -->
-        <div class="bg-white rounded-2xl shadow-sm p-6 md:p-10 mb-12 border border-slate-100 animate-fade-in">
-            <div class="flex flex-col md:flex-row gap-8 md:gap-12 items-start">
+        <div class="pb-10 mb-10 border-b border-slate-200">
+            <div class="intro-layout">
                 <!-- Profile Column (Left) -->
-                <div class="w-full md:w-1/3 lg:w-1/4 flex-shrink-0 flex flex-col items-center md:items-start text-center md:text-left border-b md:border-b-0 md:border-r border-slate-100 pb-8 md:pb-0 md:pr-8">
+                <div class="flex flex-col items-center md:items-start text-center md:text-left">
                     <!-- Avatar -->
-                    <div class="w-32 h-32 bg-slate-200 rounded-full flex items-center justify-center text-4xl font-bold text-slate-500 mb-6 overflow-hidden border-4 border-white shadow-md">
-                        <!-- KL -->
+                    <div class="w-32 h-32 bg-slate-200 rounded-full flex items-center justify-center text-4xl font-bold text-slate-500 mb-5 overflow-hidden border border-slate-200">
                         <img src="images/KaifaLuo_2018.JPG" alt="profile photo" class="w-32 h-32 rounded-full">
                     </div>
                     <!-- Name & Loc -->
-                    <h1 class="text-3xl font-bold text-slate-900 mb-3">Kaifa Luo</h1>
-                    <div class="flex items-center justify-center md:justify-start gap-2 text-slate-500 mb-8">
+                    <h1 class="text-3xl font-bold text-slate-900 mb-2">Kaifa Luo</h1>
+                    <p class="profile-position">Postdoc @Columbia U.</p>
+                    <div class="flex items-center justify-center md:justify-start gap-2 text-slate-500 text-sm mb-5">
                         <i data-lucide="map-pin" class="w-4 h-4"></i>
                         <span>New York, NY</span>
                     </div>
                     <!-- Buttons -->
                     <div class="flex flex-col gap-3 w-full max-w-xs md:max-w-none">
-                         <a href="mailto:kl3883@columbia.edu" class="flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-slate-900 hover:bg-slate-800 text-white rounded-lg transition-colors duration-200 text-sm font-medium shadow-sm">
+                         <a href="mailto:kl3883@columbia.edu" class="flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-white border border-slate-200 hover:bg-slate-50 text-slate-700 rounded-md transition-colors duration-200 text-sm font-medium">
                             <i data-lucide="mail" class="w-4 h-4"></i>
                             Contact
                         </a>
-                        <a href="https://scholar.google.com/citations?hl=en&user=IaCMjeQAAAAJ&view_op=list_works&sortby=pubdate" class="flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-white border border-slate-200 hover:bg-slate-50 text-slate-700 rounded-lg transition-colors duration-200 text-sm font-medium shadow-sm">
+                        <a href="https://scholar.google.com/citations?hl=en&user=IaCMjeQAAAAJ&view_op=list_works&sortby=pubdate" class="flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-white border border-slate-200 hover:bg-slate-50 text-slate-700 rounded-md transition-colors duration-200 text-sm font-medium">
                             <i data-lucide="graduation-cap" class="w-4 h-4"></i>
                             Google Scholar
                         </a>
                     </div>
                 </div>
                 <!-- Bio Column (Right) -->
-                <div class="w-full md:w-2/3 lg:w-3/4 pt-2 md:pt-0">
-                    <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+                <div class="min-w-0 pt-2 md:pt-0">
+                    <h2 class="text-2xl font-semibold text-slate-900 mb-6 flex items-center gap-3">
                         About Me
                     </h2>
-                    <div class="prose prose-slate max-w-none text-slate-600 leading-relaxed text-lg">
+                    <div class="bio text-slate-600">
                         <p>
-                        I am a postdoctoral researcher at Columbia University, working with <a href="https://www.chem.columbia.edu/content/david-r-reichman", style = "color:rgb(28, 28, 142)">David Reichman</a>. 
-                        I completed my Ph.D. in Physics and M.S. in CSEM from UT Austin in 2025, advised by <a href="https://physics.utexas.edu/directory/feliciano-giustino", style = "color:rgb(28, 28, 142)">Feliciano Giustino</a>. 
-                        Before that, I studied at Wuhan University and worked with <a href="https://physics.hkust.edu.hk/node/150", style = "color:rgb(28, 28, 142)">Xi Dai</a> at HKUST.
+                        I am a postdoctoral researcher at Columbia University, working with <a href="https://www.chem.columbia.edu/content/david-r-reichman" class="bio-link">David Reichman</a>.
+                        I completed my Ph.D. in Physics and M.S. in CSEM from UT Austin in 2025, advised by <a href="https://physics.utexas.edu/directory/feliciano-giustino" class="bio-link">Feliciano Giustino</a>.
+                        Before that, I studied at Wuhan University and worked with <a href="https://physics.hkust.edu.hk/node/150" class="bio-link">Xi Dai</a> at HKUST.
                         <br>
                         <br>
-                        My research lies at the intersection of condensed matter physics, materials science, and chemistry. 
-                        I combine many-body theory with first-principles methods to understand and predict real materials, 
+                        My research lies at the intersection of condensed matter physics, materials science, and chemistry.
+                        I combine many-body theory with first-principles methods to understand and predict real materials,
                         with particular interest in how electronic excitations couple to the lattice and spin degrees of freedom.
                         </p>
                     </div>
@@ -76,149 +134,100 @@
             </div>
         </div>
 
-        <!-- Publications Section -->
-        <section class="animate-fade-in" style="animation-delay: 0.2s;">
+        <!-- Public bibliography verified against Google Scholar and publisher/Crossref records, 2026-09-30.
+             Under-review entries supplied by the author; author order and abbreviations preserved.
+             Published papers are ordered by online publication date, newest first. -->
+        <section id="preprints" aria-labelledby="preprints-heading" class="mb-12">
             <div class="flex items-center gap-3 mb-6">
-                 <h2 class="text-2xl font-bold text-slate-900">Selected Publications</h2>
-                 <div class="h-px bg-slate-200 flex-grow ml-4"></div>
+                <h2 id="preprints-heading" class="text-2xl font-semibold text-slate-900">Preprints &amp; Ongoing Work</h2>
+                <div class="h-px bg-slate-200 flex-grow ml-4" aria-hidden="true"></div>
             </div>
+            <ol reversed class="publication-list">
+                <li>
+                    <h3>Programmable electron-phonon and many-body workflows with EPWpy</h3>
+                    <p class="publication-authors">Sabyasachi Tiwari, &hellip;, <strong>Kaifa Luo</strong>, et al.</p>
+                    <p class="publication-venue"><span class="preprint-label">Under review</span></p>
+                </li>
+                <li>
+                    <h3>Excited states of polarons from first principles</h3>
+                    <p class="publication-authors"><strong>Kaifa Luo</strong>, Sabyasachi Tiwari, Wooil Yang, Zhenbang Dai, Young-Woo Son, Feliciano Giustino</p>
+                    <p class="publication-venue"><span class="preprint-label">Under review</span></p>
+                </li>
+                <li data-publication-date="2018-10-22">
+                    <h3><a href="https://arxiv.org/abs/1810.09231">Nodal Manifolds Bounded by Exceptional Points on Non-Hermitian Honeycomb Lattices and Electrical-Circuit Realizations</a></h3>
+                    <p class="publication-authors"><strong>Kaifa Luo</strong>, Jiajin Feng, Y. X. Zhao, Rui Yu</p>
+                    <p class="publication-venue">arXiv:1810.09231 (2018). <span class="preprint-label">Preprint</span></p>
+                </li>
+            </ol>
+        </section>
 
-            <!-- <p class="text-slate-600 leading-relaxed text-lg mb-8">
-                
-                <br>
-            </p> -->
-            
-            <div class="space-y-6">
-
-                <!-- Paper 3 -->
-                <div class="group bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-slate-100 hover:border-blue-100 flex flex-col sm:flex-row gap-6 items-start">
-                    <!-- Image Placeholder -->
-                    <div class="w-full sm:w-36 h-36 rounded-lg flex-shrink-0 flex items-center justify-center text-slate-300">
-                        <!-- <i data-lucide="image" class="w-8 h-8"></i> -->
-                    <img src="images/2025-EWBG.png" alt="safs_small" width="160" height="160" style="border-style: none">
-                    </div>
-                    <!-- Content -->
-                    <div class="flex-grow">
-                        <h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">
-                            <a href="https://arxiv.org/abs/2506.07284">
-                            Extreme-Band-Gap Semiconductors with Shallow Dopants and Mobile Carriers
-                            </a>
-                        </h3>
-                        <div class="text-sm text-slate-600 mb-3 serif-text italic">
-                            Sieun Chae, Nocona Sanders, Kelsey A. Mengle, Amanda Wang, Xiao Zhang, Jon Lafuente Bartolome, 
-                            <strong>Kaifa Luo</strong>, Yen-Chun Huang, Feliciano Giustino, John T. Heron, Emmanouil Kioupakis
-                        </div>
-                        <div class="flex flex-wrap gap-2 mb-3">
-                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-100 text-slate-800">
-                                arXiv:2506.07284, 2025
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Paper 1 -->
-                <div class="group bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-slate-100 hover:border-blue-100 flex flex-col sm:flex-row gap-6 items-start">
-                    <!-- Image Placeholder -->
-                    <div class="w-full sm:w-36 h-36 rounded-lg flex-shrink-0 flex items-center justify-center text-slate-300">
-                        <!-- <i data-lucide="image" class="w-8 h-8"></i> -->
-                        <img src="images/2025-polaron-topo.png" alt="image" width="160" height="160" style="border-style: none">
-                    </div>
-                    <!-- Content -->
-                    <div class="flex-grow">
-                        <h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">
-                            <a href="https://www.pnas.org/doi/10.1073/pnas.2514647123">
-                            Symmetry-protected topological polarons
-                            </a>
-                        </h3>
-                        <div class="text-sm text-slate-600 mb-3 serif-text italic">
-                            <strong>Kaifa Luo</strong>, Jon Lafuente-Bartolome, Feliciano Giustino
-                        </div>
-                        <div class="flex flex-wrap gap-2 mb-3">
-                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-100 text-slate-800">
-                            <em>Proceedings of the National Academy of Sciences</em>, 123 (4) e2514647123 (2026)<br>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Paper 2 -->
-                <div class="group bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-slate-100 hover:border-blue-100 flex flex-col sm:flex-row gap-6 items-start">
-                    <!-- Image Placeholder -->
-                    <div class="w-full sm:w-36 h-36 rounded-lg flex-shrink-0 flex items-center justify-center text-slate-300">
-                        <img src="images/2024-EuAl4.png" alt="image" width="160" height="160" style="border-style: none">
-                    </div>
-                    <!-- Content -->
-                    <div class="flex-grow">
-                        <h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">
-                            <a href="https://www.nature.com/articles/s41467-025-65374-y"> 
-                            Incommensurate Transverse Peierls Transition and Signature of Chiral Charge Density Wave in EuAl<sub>4</sub>
-                            </a>
-                        </h3>   
-                        <div class="text-sm text-slate-600 mb-3 serif-text italic">
-                            Fazhi Yang, <strong>Kaifa Luo</strong>, Weizhe Zhang, Xiaoyu Guo, William R Meier, Haoyang Ni, 
-                            Haoxiang X Li, Pedro Mercado Lozano, Gilberto Fabbris, Ayman H Said, Christie Nelson, 
-                            Tiantian Zhang, Andrew May, Michael McGuire, Rinkle Juneja, Lucas Lindsay, 
-                            Honyung Lee, J-M Zuo, Miaofang Chi, Xi Dai, Liuyan Zhao, Hu Miao
-                        </div>
-                        <div class="flex flex-wrap gap-2 mb-3">
-                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-100 text-slate-800">
-                            <em>Nature Communications</em>, 16, 10401 (2025)
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Paper 5 -->
-                <div class="group bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-slate-100 hover:border-blue-100 flex flex-col sm:flex-row gap-6 items-start">
-                    <!-- Image Placeholder -->
-                    <div class="w-full sm:w-36 h-36 rounded-lg flex-shrink-0 flex items-center justify-center text-slate-300">
-                        <!-- <i data-lucide="image" class="w-8 h-8"></i> -->
-                        <img src="images/2023-PRX.png" alt="image" width="160" height="160" style="border-style: none">
-                    </div>
-                    <!-- Content -->
-                    <div class="flex-grow">
-                        <h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">
-                            <a href="https://journals.aps.org/prx/abstract/10.1103/PhysRevX.13.011027">
-                            Transverse Peierls Transition
-                            </a>
-                        </h3>
-                        <div class="text-sm text-slate-600 mb-3 serif-text italic">
-                            <strong>Kaifa Luo</strong>, Xi Dai
-                        </div>
-                        <div class="flex flex-wrap gap-2 mb-3">
-                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-100 text-slate-800">
-                            <em>Physical Review X</em>, 13 (1), 011027 (2023)
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Paper 6 -->
-                <div class="group bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-slate-100 hover:border-blue-100 flex flex-col sm:flex-row gap-6 items-start">
-                    <!-- Image Placeholder -->
-                    <div class="w-full sm:w-36 h-36 rounded-lg flex-shrink-0 flex items-center justify-center text-slate-300">
-                        <!-- <i data-lucide="image" class="w-8 h-8"></i> -->
-                        <img src="images/2018-Research.jpg" alt="image" width="160" height="160" style="border-style: none">
-                    </div>
-                    <!-- Content -->
-                    <div class="flex-grow">
-                        <h3 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">
-                            <a href="https://spj.science.org/doi/full/10.1155/2018/6793752?adobe_mc=MCMID%3D14000805405683999525849378418609464876%7CMCORGID%3D242B6472541199F70A4C98A6%2540AdobeOrg%7CTS%3D1697068800"> 
-                            Topological nodal states in circuit lattice
-                            </a>
-                        </h3>
-                        <div class="text-sm text-slate-600 mb-3 serif-text italic">
-                            <strong>Kaifa Luo</strong>, Rui Yu, Hongming Weng
-                        </div>
-                        <div class="flex flex-wrap gap-2 mb-3">
-                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-100 text-slate-800">
-                            <em>Research</em>, 2018<br>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
+        <section id="publications" aria-labelledby="publications-heading">
+            <div class="flex items-center gap-3 mb-6">
+                <h2 id="publications-heading" class="text-2xl font-semibold text-slate-900">Publications</h2>
+                <div class="h-px bg-slate-200 flex-grow ml-4" aria-hidden="true"></div>
             </div>
+            <ol reversed class="publication-list">
+                <li data-publication-date="2026-07-22">
+                    <h3><a href="https://doi.org/10.1038/s41467-026-75635-z">Anomalous charge density wave in a two-dimensional superatomic superconductor</a></h3>
+                    <p class="publication-authors">Boqin Song, Shuaishuai Sun, Zhongxu Wei, Xinbo Wang, Xiaoping Ma, <strong>Kaifa Luo</strong>, Lei Wang, Jun Deng, Xu Chen, Tian Qian, Shuya Xing, Zhihai Cheng, Jian-gang Guo, Tianping Ying, Xiaolong Chen</p>
+                    <p class="publication-venue"><em>Nature Communications</em> <strong>17</strong>, 8950 (2026).</p>
+                </li>
+                <li data-publication-date="2026-07-21">
+                    <h3><a href="https://doi.org/10.1038/s41524-026-02173-z">Extreme-band-gap semiconductors with shallow dopants and mobile carriers</a></h3>
+                    <p class="publication-authors">Sieun Chae, Nocona Sanders, Kelsey A. Mengle, Amanda Wang, Xiao Zhang, Jon Lafuente-Bartolome, <strong>Kaifa Luo</strong>, Yen-Chun Huang, Feliciano Giustino, John T. Heron, Emmanouil Kioupakis</p>
+                    <p class="publication-venue"><em>npj Computational Materials</em> (2026).</p>
+                </li>
+                <li data-publication-date="2026-01-22">
+                    <h3><a href="https://doi.org/10.1073/pnas.2514647123">Symmetry-protected topological polarons</a></h3>
+                    <p class="publication-authors"><strong>Kaifa Luo</strong>, Jon Lafuente-Bartolome, Feliciano Giustino</p>
+                    <p class="publication-venue"><em>Proceedings of the National Academy of Sciences</em> <strong>123</strong>, e2514647123 (2026).</p>
+                </li>
+                <li data-publication-date="2025-11-24">
+                    <h3><a href="https://doi.org/10.1038/s41467-025-65374-y">Incommensurate Transverse Peierls Transition and Signature of Chiral Charge Density Wave in EuAl<sub>4</sub></a></h3>
+                    <p class="publication-authors">F. Z. Yang, <strong>K. F. Luo</strong>, Weizhe Zhang, Xiaoyu Guo, W. R. Meier, H. Ni, H. X. Li, P. Mercado Lozano, G. Fabbris, A. H. Said, C. Nelson, T. T. Zhang, A. F. May, M. A. McGuire, R. Juneja, L. Lindsay, H. N. Lee, J.-M. Zuo, M. F. Chi, X. Dai, Liuyan Zhao, H. Miao</p>
+                    <p class="publication-venue"><em>Nature Communications</em> <strong>16</strong>, 10401 (2025).</p>
+                </li>
+                <li data-publication-date="2024-11-19">
+                    <h3><a href="https://doi.org/10.1038/s41524-024-01440-1">Understanding chiral charge-density wave by frozen chiral phonon</a></h3>
+                    <p class="publication-authors">Shuai Zhang, <strong>Kaifa Luo</strong>, Tiantian Zhang</p>
+                    <p class="publication-venue"><em>npj Computational Materials</em> <strong>10</strong>, 264 (2024).</p>
+                </li>
+                <li data-publication-date="2023-10-12">
+                    <h3><a href="https://doi.org/10.1007/s11433-023-2189-7">Magnetic-field-induced electronic instability of Weyl-like fermions in compressed black phosphorus</a></h3>
+                    <p class="publication-authors">Lixuan Zheng, <strong>Kaifa Luo</strong>, Zeliang Sun, Dan Zhao, Jian Li, Dianwu Song, Shunjiao Li, Baolei Kang, Linpeng Nie, Min Shan, Zhimian Wu, Yanbing Zhou, Xi Dai, Hongming Weng, Rui Yu, Tao Wu, Xianhui Chen</p>
+                    <p class="publication-venue"><em>Science China Physics, Mechanics &amp; Astronomy</em> <strong>66</strong>, 117011 (2023).</p>
+                </li>
+                <li data-publication-date="2023-02-28">
+                    <h3><a href="https://doi.org/10.1103/physrevx.13.011027">Transverse Peierls Transition</a></h3>
+                    <p class="publication-authors"><strong>Kaifa Luo</strong>, Xi Dai</p>
+                    <p class="publication-venue"><em>Physical Review X</em> <strong>13</strong>, 011027 (2023).</p>
+                </li>
+                <li data-publication-date="2021-03-10">
+                    <h3><a href="https://doi.org/10.1103/physrevb.103.125411">Coexistence of topological edge states and skin effects in the non-Hermitian Su-Schrieffer-Heeger model with long-range nonreciprocal hopping in topoelectric realizations</a></h3>
+                    <p class="publication-authors">Ke Xu, Xintong Zhang, <strong>Kaifa Luo</strong>, Rui Yu, Dan Li, Hao Zhang</p>
+                    <p class="publication-venue"><em>Physical Review B</em> <strong>103</strong>, 125411 (2021).</p>
+                </li>
+                <li data-publication-date="2019-11-12">
+                    <h3><a href="https://doi.org/10.1103/physrevb.100.205117">Large Fermi arc and robust Weyl semimetal phase in Ag<sub>2</sub>S</a></h3>
+                    <p class="publication-authors">Zhenwei Wang, <strong>Kaifa Luo</strong>, Jianzhou Zhao, Rui Yu</p>
+                    <p class="publication-venue"><em>Physical Review B</em> <strong>100</strong>, 205117 (2019).</p>
+                </li>
+                <li data-publication-date="2019-11-01">
+                    <h3><a href="https://doi.org/10.1038/s41524-019-0245-5">Topological phases in pyrochlore thallium niobate Tl<sub>2</sub>Nb<sub>2</sub>O<sub>6+x</sub></a></h3>
+                    <p class="publication-authors">Wei Zhang, <strong>Kaifa Luo</strong>, Zhendong Chen, Ziming Zhu, Rui Yu, Chen Fang, Hongming Weng</p>
+                    <p class="publication-venue"><em>npj Computational Materials</em> <strong>5</strong>, 105 (2019).</p>
+                </li>
+                <li data-publication-date="2019-06-07">
+                    <h3><a href="https://doi.org/10.1103/physrevb.99.241104">Observation of multiple types of topological fermions in PdBiSe</a></h3>
+                    <p class="publication-authors">B. Q. Lv, Z.-L. Feng, J.-Z. Zhao, Noah F. Q. Yuan, A. Zong, <strong>K. F. Luo</strong>, R. Yu, Y.-B. Huang, V. N. Strocov, A. Chikina, A. A. Soluyanov, N. Gedik, Y.-G. Shi, T. Qian, H. Ding</p>
+                    <p class="publication-venue"><em>Physical Review B</em> <strong>99</strong>, 241104 (2019).</p>
+                </li>
+                <li data-publication-date="2018-09-02">
+                    <h3><a href="https://doi.org/10.1155/2018/6793752">Topological Nodal States in Circuit Lattice</a></h3>
+                    <p class="publication-authors"><strong>Kaifa Luo</strong>, Rui Yu, Hongming Weng</p>
+                    <p class="publication-venue"><em>Research</em> <strong>2018</strong>, 6793752 (2018).</p>
+                </li>
+            </ol>
         </section>
 
         <!-- Footer -->
